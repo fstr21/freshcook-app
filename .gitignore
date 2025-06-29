@@ -1,40 +1,47 @@
-# Dependencies
-node_modules/
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Build outputs
+# Local environment variables
+.env.local
+.env.*.local
+
+# Production environment variables
+.env.production
+.env.development
+
+# Dependency directories
+node_modules/
 dist/
 dist-ssr/
 *.local
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Editor directories and files
+# IDEs and editors
 .vscode/*
 !.vscode/extensions.json
-.idea/
-.DS_Store
+.idea
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Logs
-logs/
-*.log
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # Runtime data
-pids/
+pids
 *.pid
 *.seed
 *.pid.lock
@@ -44,7 +51,7 @@ coverage/
 *.lcov
 
 # nyc test coverage
-.nyc_output/
+.nyc_output
 
 # Dependency directories
 jspm_packages/
@@ -71,33 +78,32 @@ jspm_packages/
 .yarn-integrity
 
 # parcel-bundler cache (https://parceljs.org/)
-.cache/
-.parcel-cache/
+.cache
+.parcel-cache
 
 # Next.js build output
-.next/
+.next
 
 # Nuxt.js build / generate output
-.nuxt/
-
-# Gatsby files
-.cache/
-public/
+.nuxt
 
 # Storybook build outputs
-.out/
-.storybook-out/
+.out
+.storybook-out
 
 # Temporary folders
 tmp/
 temp/
 
-# Supabase
-.branches/
-.temp/
-
-# Local Netlify folder
-.netlify/
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Bolt specific
 .bolt/
